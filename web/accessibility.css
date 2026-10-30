@@ -1,0 +1,88 @@
+/* Stronger contrast for the reading surfaces used throughout a shift. */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+.sidebar nav {
+  overflow-x: hidden;
+}
+.nav-module > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.page-heading p,
+.breadcrumbs,
+.page-footer,
+.stat p,
+.data-source,
+.roadmap p,
+.muted,
+.table-toolbar small,
+.panel small,
+.table-wrap small,
+.pagination,
+.section-heading > span:not(.badge) {
+  color: #607266;
+}
+.submenu button {
+  color: #536b5d;
+  font-size: 12px;
+}
+.nav-module {
+  font-size: 13px;
+}
+.table-wrap th {
+  color: #546b59;
+  font-size: 11px;
+}
+.table-wrap td {
+  font-size: 12px;
+}
+.table-wrap td small {
+  font-size: 10px;
+}
+.table-link {
+  font-size: 12px;
+}
+.contexts select {
+  font-size: 12px;
+}
+.global-search input,
+.page-heading p {
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .sidebar:focus-within {
+    width: 247px;
+    box-shadow: 14px 0 35px #173b2933;
+  }
+  .sidebar:focus-within .brand > div {
+    display: block;
+  }
+  .sidebar:focus-within .nav-module > span,
+  .sidebar:focus-within .nav-module > svg:last-child {
+    display: block;
+  }
+  .sidebar:focus-within .nav-module {
+    justify-content: flex-start;
+  }
+  .sidebar:focus-within .submenu {
+    display: block;
+  }
+  .sidebar:focus-within .collapse-button {
+    display: flex;
+  }
+  .header-actions > .badge {
+    display: inline-flex;
+    font-size: 8px;
+    margin-right: 2px;
+    padding: 4px;
+  }
+  .header-actions .icon {
+    padding: 5px;
+  }
+  .contexts select {
+    max-width: 125px;
+  }
+}

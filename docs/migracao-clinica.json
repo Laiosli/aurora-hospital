@@ -1,0 +1,63 @@
+{
+  "executedAt": "2026-10-30T01:45:57.253Z",
+  "before": {
+    "patients": {
+      "count": 8,
+      "hash": "078f9c23b96df39b0373a1af3f4095d43c152b91808a7a02acd465b625a182d3"
+    },
+    "users": {
+      "count": 14,
+      "hash": "b0093d27674421406a4b75ce6a3a4681a94c4751d523305a3ed4b779a6de9b9a"
+    },
+    "encounters": {
+      "count": 1,
+      "hash": "c183d377e4b8ba786c0e7e462d690ce52d07a50b66823b946999e5cd686ab068"
+    },
+    "appointments": {
+      "count": 1,
+      "hash": "7db604731cc0ccb270ba1809f9e75530eba9cf2b9b18959ff452847d21904d10"
+    },
+    "beds": {
+      "count": 3,
+      "hash": "50c421ca7f617f97b0045a63914d926cf7fcf574639435ac10bb0c264fc78a68"
+    }
+  },
+  "after": {
+    "patients": {
+      "count": 8,
+      "hash": "078f9c23b96df39b0373a1af3f4095d43c152b91808a7a02acd465b625a182d3"
+    },
+    "users": {
+      "count": 14,
+      "hash": "b0093d27674421406a4b75ce6a3a4681a94c4751d523305a3ed4b779a6de9b9a"
+    },
+    "encounters": {
+      "count": 1,
+      "hash": "c183d377e4b8ba786c0e7e462d690ce52d07a50b66823b946999e5cd686ab068"
+    },
+    "appointments": {
+      "count": 1,
+      "hash": "7db604731cc0ccb270ba1809f9e75530eba9cf2b9b18959ff452847d21904d10"
+    },
+    "beds": {
+      "count": 3,
+      "hash": "50c421ca7f617f97b0045a63914d926cf7fcf574639435ac10bb0c264fc78a68"
+    }
+  },
+  "auditPrefixPreserved": true,
+  "previousAuditEvents": 63,
+  "migrations": [
+    {
+      "version": 1,
+      "checksum": "f39347f2e4efb4e8dd4446925e89b2856a7ff3e5440e2b59d924a93e71762025"
+    },
+    {
+      "version": 2,
+      "checksum": "12e80d030cf08efa5b4876fe0a89e0914173a8a1011de90370f396c8fe6ca2ff"
+    },
+    {
+      "version": 3,
+      "checksum": "1d1c2cce808e76ceb61b3a01b1ef9e2bb17d55a923896aa0237d643e84019b92"
+    }
+  ]
+}

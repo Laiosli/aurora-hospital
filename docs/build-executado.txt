@@ -1,0 +1,13 @@
+
+> aurora-hospital@0.1.0 build
+> tsc -p tsconfig.server.json && tsc -p tsconfig.json && vite build
+
+vite v6.4.5 building for production...
+transforming...
+✓ 1580 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/web/index.html                   0.47 kB │ gzip:  0.31 kB
+../dist/web/assets/index-Ditj4DXJ.css   21.32 kB │ gzip:  5.49 kB
+../dist/web/assets/index-B830OYW3.js   280.05 kB │ gzip: 85.13 kB
+✓ built in 3.67s

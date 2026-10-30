@@ -1,0 +1,15 @@
+✔ Continuidade: bloqueio exclusivo recusa segundo processo e aliases de caminho (1593.5877ms)
+✔ Continuidade: duas instâncias do banco não podem abrir o mesmo diretório (4073.327ms)
+{"event":"request.failed","correlation":"028eac02-bb29-47bd-9694-f5d346155752","code":"internal_error"}
+✔ Continuidade: backup é restrito e chave ausente bloqueia sem falsa confirmação (46.6933ms)
+✔ Continuidade: backup criptografado é idempotente e contém snapshot consistente (366.5063ms)
+✔ Continuidade: restauração isolada compara todas as tabelas e não altera origem (798.3977ms)
+✔ Continuidade: arquivo adulterado é recusado e resultado de falha é registrado (7138.2834ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15671.03

@@ -1,0 +1,38 @@
+
+> aurora-hospital@0.1.0 test
+> tsx --tsconfig tsconfig.server.json --test tests/*.test.ts
+
+✔ Acesso anônimo recusado, health e contrato OpenAPI disponíveis (1675.7412ms)
+✔ Administração técnica não acessa pacientes, enfermagem não cria cadastros (20.5636ms)
+✔ Unidade e acesso direto a registro são limitados pelo vínculo (18.5448ms)
+✔ Cadastro provisório sem documento funciona e persiste (25.3698ms)
+✔ Reenvio concorrente não duplica paciente nem evento (36.2775ms)
+✔ CPF repetido é rejeitado e CPF inválido não é aceito (38.5361ms)
+✔ Homônimos têm aviso e busca/paginação são do servidor (28.8582ms)
+✔ Validação bloqueia campos extras, datas impossíveis/futuras e ordenação injetada (39.87ms)
+✔ Edição concorrente exige versão atual e justificativa (31.3447ms)
+{"event":"request.failed","correlation":"10d438d4-46f1-4f90-852d-9a6ff561e032","code":"internal_error"}
+✔ Falha da auditoria causa rollback do cadastro e da idempotência (20.8367ms)
+✔ Origem externa e ausência de anti-CSRF não permitem escrita (9.0508ms)
+✔ Estrutura e configuração são persistidas e versionadas (55.5067ms)
+✔ Criação de unidade concede vínculo ao autor; fuso inválido é recusado (28.3882ms)
+✔ Preferências são isoladas por usuário (19.8175ms)
+✔ Troca de perfil revoga sessão existente imediatamente (209.7092ms)
+✔ Revogação explícita encerra todas as sessões do usuário (17.4605ms)
+✔ Sessão expirada é negada (90.1329ms)
+✔ MFA obrigatório e código utilizado não é reutilizável (163.5095ms)
+✔ Auditoria encadeada é íntegra e imutável por DML comum (14.5889ms)
+✔ Logout invalida cookie e sessão (12.6847ms)
+✔ Tentativas abusivas são limitadas sem expor existência da conta (688.2751ms)
+✔ Persistência em disco sobrevive ao fechamento e reabertura do banco (4529.7689ms)
+✔ Senhas usam salt e rejeitam segredo incorreto (310.4548ms)
+✔ TOTP confere vetor RFC 6238 de 6 dígitos e rejeita código inválido (0.9645ms)
+✔ CPF/CNS: dígitos verificadores, repetidos e campos inválidos (0.3047ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9290.869

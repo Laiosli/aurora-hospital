@@ -1,0 +1,15 @@
+{
+  "executedAt": "2026-10-30T00:36:59.328Z",
+  "engine": "PGlite",
+  "source": "Cópia offline anterior à migração 002",
+  "patientsPreserved": 7,
+  "usersPreserved": 14,
+  "auditEventsPreserved": 10,
+  "migrationsAfter": [
+    1,
+    2
+  ],
+  "result": "approved",
+  "elapsedMs": 16231,
+  "limitations": "Ensaio local em diretório isolado; não verifica pg_dump/pg_restore nem RPO/RTO institucional."
+}

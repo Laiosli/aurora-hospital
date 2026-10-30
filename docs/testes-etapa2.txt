@@ -1,0 +1,59 @@
+
+> aurora-hospital@0.2.0 test
+> tsx --tsconfig tsconfig.server.json --test tests/*.test.ts
+
+✔ Acesso anônimo recusado, health e contrato OpenAPI disponíveis (5295.8003ms)
+✔ Administração técnica não acessa pacientes, enfermagem não cria cadastros (54.1719ms)
+✔ Unidade e acesso direto a registro são limitados pelo vínculo (43.7472ms)
+✔ Cadastro provisório sem documento funciona e persiste (77.0203ms)
+✔ Reenvio concorrente não duplica paciente nem evento (113.7875ms)
+✔ CPF repetido é rejeitado e CPF inválido não é aceito (129.8896ms)
+✔ Homônimos têm aviso e busca/paginação são do servidor (134.9409ms)
+✔ Validação bloqueia campos extras, datas impossíveis/futuras e ordenação injetada (98.9752ms)
+✔ Edição concorrente exige versão atual e justificativa (78.0637ms)
+{"event":"request.failed","correlation":"fdf4598e-e3e5-4893-96ad-58dc559e2da3","code":"internal_error"}
+✔ Falha da auditoria causa rollback do cadastro e da idempotência (52.6638ms)
+✔ Origem externa e ausência de anti-CSRF não permitem escrita (20.0975ms)
+✔ Estrutura e configuração são persistidas e versionadas (178.1275ms)
+✔ Criação de unidade concede vínculo ao autor; fuso inválido é recusado (86.3581ms)
+✔ Preferências são isoladas por usuário (71.0827ms)
+✔ Troca de perfil revoga sessão existente imediatamente (589.8051ms)
+✔ Revogação explícita encerra todas as sessões do usuário (49.8357ms)
+✔ Sessão expirada é negada (199.5474ms)
+✔ MFA obrigatório e código utilizado não é reutilizável (413.5291ms)
+✔ Auditoria encadeada é íntegra e imutável por DML comum (39.1494ms)
+✔ Logout invalida cookie e sessão (33.3886ms)
+✔ Tentativas abusivas são limitadas sem expor existência da conta (1433.9118ms)
+✔ Persistência em disco sobrevive ao fechamento e reabertura do banco (14504.575ms)
+✔ Migrações incrementais são idempotentes e preservam cadastros (5317.9776ms)
+✔ Modalidade desligada bloqueia abertura sem impedir cadastros (131.7084ms)
+✔ Sala e agenda exigem perfil de configuração e vínculo do profissional (262.2485ms)
+✔ Agendamento exige conferência e respeita duração; disputa tem um vencedor (213.5713ms)
+✔ Conflito de sala/profissional se mantém entre agendas diferentes (73.8128ms)
+✔ Bloqueio rejeita consulta existente e impede criação em intervalo indisponível (158.5462ms)
+✔ Reagendamento preserva horário anterior, bloqueia versão velha e falta antecipada (151.6008ms)
+✔ Check-in repetido cria apenas um episódio e atualiza agenda atomicamente (151.494ms)
+✔ Transições são explícitas e enfermagem/médico controlam início assistencial (297.4615ms)
+✔ Leitos são cadastrados sem permitir identidade do paciente ao administrador técnico (181.5441ms)
+✔ Duas ocupações incompatíveis têm apenas um vencedor e restrição no banco (293.805ms)
+✔ Transferência bloqueada não libera origem; transferência válida deixa origem em higienização (198.9131ms)
+✔ Alta libera leito para higienização; apenas perfil autorizado conclui a limpeza (158.7768ms)
+✔ Reserva cancelada e cancelamento de episódio não deixam leito retido (139.0868ms)
+✔ Indicadores refletem episódios e ocupação persistidos, sem nomes de pacientes (23.6875ms)
+✔ Histórico não permite alteração e unidades não podem ser forjadas (83.8456ms)
+✔ Cancelamento de consulta libera horário e confirmação conserva vínculo (186.9158ms)
+✔ Reserva pode ser cancelada explicitamente e ocupação preserva a mesma alocação (382.0071ms)
+✔ Checksum divergente interrompe migração sem alterar dados (19.6624ms)
+✔ Encerramento existente continua possível se o serviço for desabilitado (151.6476ms)
+✔ Conversão de data usa fuso da unidade, preserva instante e rejeita transição ambígua (9.9887ms)
+✔ Senhas usam salt e rejeitam segredo incorreto (419.7802ms)
+✔ TOTP confere vetor RFC 6238 de 6 dígitos e rejeita código inválido (0.9629ms)
+✔ CPF/CNS: dígitos verificadores, repetidos e campos inválidos (0.6549ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 25879.7149

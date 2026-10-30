@@ -1,0 +1,131 @@
+{
+  "executedAt": "2026-10-30T16:33:07.902Z",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "scope": "Supertest HTTP + NestJS + PGlite em memória. Mesmo processo, dados sintéticos. Antes/depois da execução do backup e restauração isolada, não comparação entre versões ou fornecedores.",
+  "patients": 1006,
+  "before": {
+    "requests": 20,
+    "concurrency": 1,
+    "p50Ms": 11.408900000000358,
+    "p95Ms": 15.086599999999635,
+    "elapsedMs": 237.11250000000018,
+    "sqlStatements": 160,
+    "sqlAccumulatedMs": 142.8109999999997,
+    "failures": 0,
+    "cpuMicroseconds": {
+      "user": 328000,
+      "system": 15000
+    },
+    "memoryBefore": {
+      "rss": 422678528,
+      "heapTotal": 111874048,
+      "heapUsed": 47074576,
+      "external": 232138293,
+      "arrayBuffers": 46379543
+    },
+    "memoryAfter": {
+      "rss": 430292992,
+      "heapTotal": 113709056,
+      "heapUsed": 58531448,
+      "external": 231707263,
+      "arrayBuffers": 45948537
+    }
+  },
+  "concurrentBefore": {
+    "requests": 20,
+    "concurrency": 5,
+    "p50Ms": 43.67000000000007,
+    "p95Ms": 49.77109999999993,
+    "elapsedMs": 186.15219999999954,
+    "sqlStatements": 160,
+    "sqlAccumulatedMs": 134.84539999999834,
+    "failures": 0,
+    "cpuMicroseconds": {
+      "user": 219000,
+      "system": 0
+    },
+    "memoryBefore": {
+      "rss": 430292992,
+      "heapTotal": 113709056,
+      "heapUsed": 58532168,
+      "external": 231707263,
+      "arrayBuffers": 45948537
+    },
+    "memoryAfter": {
+      "rss": 433889280,
+      "heapTotal": 115019776,
+      "heapUsed": 65064288,
+      "external": 231841496,
+      "arrayBuffers": 46082770
+    }
+  },
+  "backup": {
+    "dumpMs": 440.9463999999998,
+    "restoreVerifyMs": 980.8629999999994,
+    "encryptedBytes": 336482,
+    "tableCount": 28
+  },
+  "after": {
+    "requests": 20,
+    "concurrency": 1,
+    "p50Ms": 14.033499999999549,
+    "p95Ms": 18.260299999999916,
+    "elapsedMs": 294.8795,
+    "sqlStatements": 160,
+    "sqlAccumulatedMs": 178.34429999999975,
+    "failures": 0,
+    "cpuMicroseconds": {
+      "user": 328000,
+      "system": 78000
+    },
+    "memoryBefore": {
+      "rss": 705585152,
+      "heapTotal": 119873536,
+      "heapUsed": 75760112,
+      "external": 464583694,
+      "arrayBuffers": 96115888
+    },
+    "memoryAfter": {
+      "rss": 492101632,
+      "heapTotal": 118804480,
+      "heapUsed": 50776592,
+      "external": 231001474,
+      "arrayBuffers": 44920356
+    }
+  },
+  "concurrentAfter": {
+    "requests": 20,
+    "concurrency": 5,
+    "p50Ms": 53.940700000000106,
+    "p95Ms": 72.24240000000009,
+    "elapsedMs": 221.3764000000001,
+    "sqlStatements": 160,
+    "sqlAccumulatedMs": 156.11569999999756,
+    "failures": 0,
+    "cpuMicroseconds": {
+      "user": 234000,
+      "system": 47000
+    },
+    "memoryBefore": {
+      "rss": 492101632,
+      "heapTotal": 118804480,
+      "heapUsed": 50778112,
+      "external": 231001474,
+      "arrayBuffers": 44920356
+    },
+    "memoryAfter": {
+      "rss": 505761792,
+      "heapTotal": 118804480,
+      "heapUsed": 54776720,
+      "external": 231051686,
+      "arrayBuffers": 44970568
+    }
+  },
+  "limits": [
+    "Sem tempo visual de abertura de telas",
+    "Sem PostgreSQL em rede ou produção",
+    "CPU/memória são do processo de benchmark, sem pico monitorado",
+    "Sem meta de capacidade homologada"
+  ]
+}

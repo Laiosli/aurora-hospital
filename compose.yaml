@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: aurora
+      POSTGRES_USER: aurora
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD no ambiente}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aurora -d aurora"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  app:
+    build: .
+    ports: ["127.0.0.1:3000:3000"]
+    environment:
+      APP_ENV: demonstracao
+      HOST: 0.0.0.0
+      DB_MODE: postgres
+      DATABASE_URL: postgresql://aurora:${POSTGRES_PASSWORD}@db:5432/aurora
+      APP_ORIGIN: http://127.0.0.1:3000
+      ADMIN_TOTP_SECRET: ${ADMIN_TOTP_SECRET:?Configure segredo Base32 individual do administrador}
+      DEMO_PASSWORD: ${DEMO_PASSWORD:?Defina senha de demonstração}
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  postgres-data:
